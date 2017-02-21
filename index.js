@@ -19,20 +19,18 @@ function destructivelyRemoveFirstKitten(){
   return kittens.shift(1)
 }
 
-function appendKitten(name){
-  var arr = kittens 
-  kittens.push(name)
-} 
+function appendKitten(name) {
+  return [...kittens, name]
+}
 
-  // 2) Arrays prependKitten(name) prepends a kitten to the kittens array and returns a new array, leaving the kittens array unchanged:
-  //    ReferenceError: prependKitten is not defined
-  //     at Context.<anonymous> (test/index-test.js:53:14)
+function prependKitten(name) {
+  return [name, ...kittens]
+}
 
-  // 3) Arrays removeLastKitten() removes the last kitten in the kittens array and returns a new array, leaving the kittens array unchanged:
-  //    ReferenceError: removeLastKitten is not defined
-  //     at Context.<anonymous> (test/index-test.js:61:14)
+function removeFirstKitten() {
+  return kittens.slice(1)
+}
 
-  // 4) Arrays removeFirstKitten() removes the first kitten from the kittens array and returns a new array, leaving the kittens array unchanged:
-  //    ReferenceError: removeFirstKitten is not defined
-  //     at Context.<anonymous> (test/index-test.js:69:14)
-
+function removeLastKitten() {
+  return kittens.slice(0, kittens.length - 1)
+}
