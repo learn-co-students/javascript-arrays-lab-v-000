@@ -19,10 +19,19 @@ function appendKitten(name)
 
 {
 
-var newkittens = [...kittens]
+var newKittens = [...kittens]
 
-newkittens.push(name)
+newKittens.push(name)
 
-return kittens
+return newKittens
 
+}
+
+function prependKitten(name)
+{
+  var newKittens [kittens...]
+
+  newKittens.unshift(name)
+
+  return newKittens
 }
