@@ -29,7 +29,7 @@ return newKittens
 
 function prependKitten(name)
 {
-  var newKittens [kittens...]
+  var newKittens [...kittens]
 
   newKittens.unshift(name)
 
