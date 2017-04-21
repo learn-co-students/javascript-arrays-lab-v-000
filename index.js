@@ -19,7 +19,7 @@ function appendKitten
 
 {
 
-var newkittens = [..., kittens]
+var newkittens = [...kittens]
 
 newkittens.push(name)
 
