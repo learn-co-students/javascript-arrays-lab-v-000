@@ -15,10 +15,14 @@ function destructivelyPrependKitten(name)
   return kittens
 }
 
-function destructivelyRemoveLastKitten
+function appendKitten
 
 {
-kittens.pop()
+
+var newkittens = [..., kittens]
+
+newkittens.push(name)
 
 return kittens
+
 }
