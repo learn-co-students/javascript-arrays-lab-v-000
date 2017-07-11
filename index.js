@@ -1,22 +1,21 @@
-const app = "I don't do much."
-const kittens = ["Milo", "Otis", "Garfield"]
+var kittens = ["Milo", "Otis", "Garfield"]
 
 function destructivelyAppendKitten(name){
-  return kittens.push(name)
-}
+  kittens.push(name)
 
+  return kittens
+}
 
 function destructivelyPrependKitten(name){
-  return kittens.unshift(name)
+  kittens.unshift(name)
 }
 
-
 function destructivelyRemoveLastKitten(){
-  return kittens.pop(1)
+  kittens.pop()
 }
 
 function destructivelyRemoveFirstKitten(){
-  return kittens.shift(1)
+  kittens.shift()
 }
 
 function appendKitten(name) {
